@@ -75,11 +75,7 @@ _YAMNET_LAYER_DEFS = [
 
 def yamnet(features, params):
   """Define the core YAMNet mode in Keras."""
-  # net = layers.Reshape(
-  #     (96, params.patch_bands, 1),
-  #     input_shape=(96, params.patch_bands))(features)98
   net=layers.InputLayer()(tf.reshape(features,(-1, 103,98,1))) #(tf.reshape(features,(-1,103,98,1)))  
-  # net=layers.InputLayer()(tf.reshape(features,(-1,257, 2203, 1))) 
   for (i, (layer_fun, kernel, stride, filters)) in enumerate(_YAMNET_LAYER_DEFS):
     net = layer_fun('layer{}'.format(i + 1), kernel, stride, filters, params)(net)
   embeddings = layers.GlobalAveragePooling2D()(net)
@@ -91,8 +87,7 @@ def yamnet(features, params):
 def yamnet_frames_model(params):
   # waveform = layers.Input(batch_shape=(None,), dtype=tf.float32)
   # waveform_padded = features_lib.pad_waveform(waveform, params)
-  # log_mel_spectrogram, features = features_lib.waveform_to_log_mel_spectrogram_patches(
-  #     waveform, params)
+  # features = features_lib.extract_features(waveform, params)
   features = layers.Input(batch_shape=(None,), dtype=tf.float32)
   print(features.shape)
   predictions,embeddings = yamnet(features, params)
