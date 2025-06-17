@@ -42,9 +42,9 @@ Prediction Probabilities : [0.76 0.01 0.22]
 
 ### 📚 References
 
-1.  Suriyaprasaad, B., Upadhyay, A., Thakur, A., & Raj, R. (2025). **Explainable Boiling Acoustics Analysis using Grad-CAM and YAMNet for Robust Pool Boiling Regime Classification**. Link to Paper
+1.  Suriyaprasaad, B., Upadhyay, A., Thakur, A., & Raj, R. (2025). **[Explainable Boiling Acoustics Analysis using Grad-CAM and YAMNet for Robust Pool Boiling Regime Classification](https://doi.org/10.1016/j.applthermaleng.2025.127220)**. Applied Thermal Engineering,127220,ISSN 1359-4311.
 
-2.  Sinha, K. N. R., Kumar, V., Kumar, N., Thakur, A., & Raj, R. (2021). **[Deep learning the sound of boiling for advance prediction of boiling crisis] (https://doi.org/10.1016/j.xcrp.2021.100382)**. Cell Reports Physical Science, 2(3).
+2.  Sinha, K. N. R., Kumar, V., Kumar, N., Thakur, A., & Raj, R. (2021). **[Deep learning the sound of boiling for advance prediction of boiling crisis](https://doi.org/10.1016/j.xcrp.2021.100382)**. Cell Reports Physical Science, 2(3).
   
 3.  Sinha, K. N. R., Kumar, V., Kumar, N., Thakur, A., & Raj, R. (2024). **[Dataset for boiling acoustic emissions: A tool for data driven boiling regime prediction](https://doi.org/10.1016/j.dib.2023.109793)**. Data in Brief, 52, 109793.
 
